@@ -1,21 +1,3 @@
-# gofsolve - golang bind for fsolve library
-
-## What is this?
-
-```
-fsolve() finds a zero of a system of N nonlinear functions in N variables
-by a modification of the Powell hybrid method.
-```
-
-## Source
-
-Source of library is [here](https://people.sc.fsu.edu/~jburkardt/c_src/fsolve/fsolve.html)
-
-## Example
-
-Solve equation $x = 5.0 + 0.8 \cdot \sin{x}$
-
-```go
 package main
 
 import (
@@ -56,9 +38,3 @@ func main() {
 	// print the solution (approximate solution should be 4.27523)
 	log.Printf("x = %v\n", x[0])
 }
-
-```
-
-## Tests
-
-Tests are taken from [here](https://people.sc.fsu.edu/~jburkardt/c_src/fsolve_test/fsolve_test.html). They are implemented at [fsolve_test.go](fsolve_test.go) and can be run with `go test -v`
